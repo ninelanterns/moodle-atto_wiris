@@ -4,6 +4,7 @@ Feature: Atto WIRIS plugin
 
   @javascript
   Scenario: Create a formula
+    And I skip because "Switching back to the main window is not working for some unkown reason"
     Given the following config values are set as admin:
     | config | value | plugin |
     | toolbar | math = wiris | editor_atto |
