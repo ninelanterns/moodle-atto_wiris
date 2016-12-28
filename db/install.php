@@ -27,6 +27,7 @@
  * Enable WIRIS plugin buttons on installation.
  */
 function xmldb_atto_wiris_install() {
+    return;
     $toolbar = get_config('editor_atto', 'toolbar');
     if (strpos($toolbar, 'wiris') === false && $toolbar && $toolbar != '') {
         $groups = explode("\n", $toolbar);
